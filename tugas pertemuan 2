@@ -1,0 +1,77 @@
+fun main(){
+    val string1 = "Susi Susanti"
+    val string2 = "Susi susanti"
+    
+    println("Jumlah karakter data pertama ${string1.length}")
+    println("Jumlah karakter data kedua ${string2.length}")
+    
+    if (string1 == string2) {
+        println("sama")
+    } else {
+       println("tidak sama")  
+    }
+    println("pengecekan Selesai")
+}
+
+fun main() {
+    val angka =51
+    
+    if (angka > 50){
+        println("Lebih dari 50") 
+    }else if(angka < 50){
+        println("Kurang dari 50")
+    }else {
+        println("Sama dengan 50")
+    }
+    
+    //cek kelipatan 5 atau tidak
+    if (angka %5==0){
+        println("kelipatan 5")
+    }else {
+        println("bukan kelipatan 5")
+    }
+        
+}
+
+fun main(){
+    val myArray = intArrayOf(21, 32, 43, 24, 27, 28)
+    for((index, value) in myArray.withIndex()) {
+        println("Nilai pada indeks $index adalah: $value")
+    }
+}
+
+fun main(){
+    val umur = 17
+    
+    val kategoriUmur = when (umur) {
+        in 6..12 -> "anak anak"
+        in 13..16 -> "remaja"
+        in 17..100 -> "dewasa"
+        else -> "umur di luar rentang"
+    }
+    
+    println("kamu adalah kategoriUmur $kategoriUmur")
+}
+
+fun main(){
+    val angka = 60 
+    //perbandingan dengan 100
+    if (angka > 100) {
+        println("Lebih besar dari 100")
+    } else {
+        println("Lebih kecil atau sama dengan 100")
+    }
+    
+    //kelipatan 3 atau 5, kelipatan 3 dan 5
+    
+    if (angka % 3 == 0 && angka % 5 == 0) {
+        println("Kelipatan 3 dan 5")
+    } else if (angka % 3 == 0) {
+        print("kelipatan 3")
+    } else if (angka % 5 == 0) {
+        print("kelipatan 5")
+    } else {
+        println("Bukan kelipatan 3 maupun 5")
+        
+    }
+}
